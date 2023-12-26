@@ -1,0 +1,148 @@
+<!--
+Vishnu Sreekanth
+
+Tutoring Website
+
+our-tutoring.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <script>
+
+            function scrollToSpecifiedSection(specifiedSection) {
+                document.getElementById(specifiedSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function showOrHidePopUpMenu() {
+                if (document.getElementById("popUpMenu").style.display === "block") {
+                    document.getElementById("popUpMenu").style.display = "none";
+                } else {
+                    document.getElementById("popUpMenu").style.display = "block"
+                }
+            }
+
+        </script>
+        <title>Our Tutoring | StemMD Tutoring</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <nav>
+            <div class="navBarLogo">
+                <a href="index.html"><img src="img/StemMDLogo.png"></a>
+            </div>
+            <div class="navBarLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="our-tutoring.html" class="alreadyOnPageOfLink">Our Tutoring</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="enroll.html">Enroll</a></li>
+                </ul>
+                <div class="hamburgerMenu">
+                    <img src="img/HamburgerMenu.png" onclick="showOrHidePopUpMenu()">
+                </div>
+            </div>
+            <div class="break"></div>
+            <div id="popUpMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="our-tutoring.html" class="alreadyOnPageOfLink">Our Tutoring</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="enroll.html">Enroll</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fullTextRow">
+            <h1>Our Tutoring</h1>
+            <p>We offer one-on-one online tutoring in all of the subjects below. Instructors for each subject vary.</p>
+        </div>
+        <div class="twoElementRow">
+            <div class="rowHalf">
+                <img src="img/StemMDMathGraphic.png">
+            </div><div class="rowHalf">
+                <h1>Mathematics</h1>
+                <h2>Algebra, Geometry, Precalculus, Calculus AB/BC, Differential Equations</h2>
+                <p>We offer tutoring for most high school math courses. These include Algebra I, Geometry, 
+                    Algebra II, Precalculus, Calculus AB, Calculus BC, and Differential Equations. We also offer AP Exam tutoring 
+                    for the AP Calculus AB Exam and the AP Calculus BC Exam.</p>
+            </div>
+        </div>
+        <div class="twoElementRow">
+            <div class="rowHalf">
+                <h1>Biology</h1>
+                <p>We offer tutoring for high school biology. We also offer AP Exam tutoring for the AP 
+                    Biology Exam.</p>
+            </div><div class="rowHalf">
+                <img src="img/StemMDBiologyGraphic.png">
+            </div>
+        </div>
+        <div class="twoElementRow">
+            <div class="rowHalf">
+                <img src="img/StemMDChemistryGraphic.png">
+            </div><div class="rowHalf">
+                <h1>Chemistry</h1>
+                <p>We offer tutoring for high school chemistry. We also offer AP Exam tutoring for the AP 
+                    Chemistry Exam.</p>
+            </div>
+        </div>
+        <div class="twoElementRow">
+            <div class="rowHalf">
+                <h1>Physics</h1>
+                <h2>Physics I, Physics C</h2>
+                <p>We offer tutoring for high school physics and mechanics, which include Physics I and Physics C. We also 
+                    offer AP Exam tutoring for the AP Physics I Exam and the AP Physics C Exam.</p>
+            </div><div class="rowHalf">
+                <img src="img/StemMDPhysicsGraphic.png">
+            </div>
+        </div>
+        <div class="twoElementRow">
+            <div class="rowHalf">
+                <img src="img/StemMDCSGraphic.png">
+            </div><div class="rowHalf">
+                <h1>Computer Science</h1>
+                <h2>Computer Science Principles, Java Programming, Computer Science A, Object-Oriented Design, Advanced Data Structures</h2>
+                <p>We offer tutoring for various high school Computer Science courses. These include Computer Science Principles, 
+                    Principles of Java Programming, Computer Science A, Object-Oriented Design, and Advanced Data Structures. We also offer AP Exam tutoring 
+                    for the AP Computer Science Principles Exam and the AP Computer Science A Exam.</p>
+            </div>
+        </div>
+        <div class="twoElementRow">
+            <div class="rowHalf">
+                <h1>SAT Math</h1>
+                <p>We offer tutoring for the entire mathematics section of the SAT.</p>
+            </div><div class="rowHalf">
+                <img src="img/StemMDSATMathGraphic.png">
+            </div>
+        </div>
+        <div class="twoElementRow finalSectionOnPage">
+            <div class="rowHalf">
+                <img src="img/StemMDSATELAGraphic.png">
+            </div><div class="rowHalf">
+                <h1>SAT Reading and Writing</h1>
+                <p>Yes, we also offer tutoring for both the reading and writing sections of the SAT! While we mostly tutor in subjects in the field of STEM, 
+                    we have expertise in this section of the SAT too and are well-equipped to help students get the scores that they desire.
+                </p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="enroll.html">Enroll</a></li>
+            </ul>
+        </div><div class="footerContactInfo">
+            <h1>Contact Us:</h1>
+            <p>[PLACEHOLDER]@gmail.com</p>
+        </div>
+    </footer>
+</html>

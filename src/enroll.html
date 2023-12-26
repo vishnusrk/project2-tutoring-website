@@ -1,0 +1,93 @@
+<!--
+Vishnu Sreekanth
+
+Tutoring Website
+
+enroll.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <script>
+
+            function scrollToSpecifiedSection(specifiedSection) {
+                document.getElementById(specifiedSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function showOrHidePopUpMenu() {
+                if (document.getElementById("popUpMenu").style.display === "block") {
+                    document.getElementById("popUpMenu").style.display = "none";
+                } else {
+                    document.getElementById("popUpMenu").style.display = "block"
+                }
+            }
+
+        </script>
+        <title>Enroll | StemMD Tutoring</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <nav>
+            <div class="navBarLogo">
+                <a href="index.html"><img src="img/StemMDLogo.png"></a>
+            </div>
+            <div class="navBarLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="enroll.html" class="alreadyOnPageOfLink">Enroll</a></li>
+                </ul>
+                <div class="hamburgerMenu">
+                    <img src="img/HamburgerMenu.png" onclick="showOrHidePopUpMenu()">
+                </div>
+            </div>
+            <div class="break"></div>
+            <div id="popUpMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="enroll.html" class="alreadyOnPageOfLink">Enroll</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fullTextRow">
+            <h1>Enroll</h1>
+        </div>
+        <div class="twoElementRow">
+            <div class="rowHalf">
+                <p>To sign up for StemMD Tutoring, send us an email at <strong>[PLACEHOLDER]@gmail.com</strong>. Please specify the subject that you 
+                would like to be tutored in, any relevant courses that you are taking, and your preferred video communication platform (Zoom, Google 
+                Meet, etc.) We will respond promptly to schedule a consultation meeting with you. From there, we'll set up a schedule that works the best for 
+                you. If you are not sure about enrolling yet but have some questions, please feel free to email us too.</p>
+            </div><div class="rowHalf">
+                <img src="img/StemMDEmailGraphic.png">
+            </div>
+        </div>
+        <div class="fullTextRow finalSectionOnPage">
+            <h1>Tuition</h1>
+            <p>[PLACEHOLDER]</p>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="enroll.html">Enroll</a></li>
+            </ul>
+        </div><div class="footerContactInfo">
+            <h1>Contact Us:</h1>
+            <p>[PLACEHOLDER]@gmail.com</p>
+        </div>
+    </footer>
+</html>

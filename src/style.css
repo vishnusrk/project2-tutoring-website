@@ -1,0 +1,339 @@
+/*
+Vishnu Sreekanth
+
+Tutoring Website
+
+style.css
+*/
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: navy;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        position: static;
+    }
+
+}
+
+.navBarLogo img {
+    width: 200px;
+    height: auto;
+    padding-left: 15%;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .navBarLinks ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hamburgerMenu img {
+        display: none;
+    }
+    
+    #popUpMenu {
+        display: none;
+    }
+    
+    #popUpMenu ul li {
+        display: none;
+    }
+    
+    #popUpMenu ul li a {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .navBarLinks ul li {
+        display: none
+    }
+
+    .hamburgerMenu {
+        display: block;
+    }
+
+    #popUpMenu {
+        display: none;
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+        background-color: rgb(0, 0, 98);
+    }
+    
+    #popUpMenu ul li {
+        list-style: none;
+        margin-bottom: 20px;
+    }
+    
+    #popUpMenu ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        transition: border-bottom 0.2s;
+        font-size: 1.5em;
+    }
+
+    #popUpMenu ul li a:hover {
+        border-bottom: solid 1.5px white;
+    }
+
+}
+
+.navBarLinks {
+    display: flex;
+    align-items: center;
+}
+
+.navBarLinks ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navBarLinks ul li {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.navBarLinks ul li a {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    transition: border-bottom 0.2s;
+}
+
+
+.navBarLinks ul li a:hover, .alreadyOnPageOfLink {
+    border-bottom: solid 1.5px white;
+}
+
+.hamburgerMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hamburgerMenu img {
+    padding-right: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.twoElementRow {
+    width: 100%;
+    margin-top: 50px;
+}
+
+#secondHomepageSection, #thirdHomepageSection, #fourthHomepageSection {
+    width: 100%;
+    padding-top: 150px;
+}
+
+.rowHalf, .condensedRowHalf {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.rowHalf h1 {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    font-weight: 400;
+    color: navy;
+    font-family: 'Nunito', sans-serif;
+    font-size: 4.5vw;
+}
+
+.rowHalf h2 {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    font-weight: 300;
+    color: navy;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vw;
+}
+
+.rowHalf p {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    font-size: 1.8vw;
+    font-family: 'Nunito', sans-serif;
+    color: navy;
+    font-weight: 100;
+}
+
+.rowHalf button {
+    margin: 10px 5px auto;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    background-color: navy;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    width: 160px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.rowHalf button:hover {
+    background-color: rgb(0, 0, 90);
+}
+
+.rowHalf button:active {
+    background-color: rgb(0, 0, 50);
+}
+
+.rowHalf img {
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    width: 65%;
+}
+
+.condensedTwoElementRow {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.condensedRowHalf h1 {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    font-weight: 400;
+    color: navy;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vw;
+    margin: 10px 0 10px;
+}
+
+.condensedRowHalf h2 {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    font-weight: 300;
+    color: navy;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5vw;
+    margin: 10px 0 10px;
+}
+
+.condensedRowHalf p {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    font-weight: 100;
+    color: navy;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2vw;
+    margin: 0;
+}
+
+.condensedRowHalf img {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    width: 75%;
+}
+
+.fullTextRow {
+    margin-top: 2.5%;
+    text-align: center;
+    width: 100%;
+}
+
+.fullTextRow h1 {
+    color: navy;
+    font-size: 4.5vw;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+}
+
+.fullTextRow p {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    font-size: 2vw;
+    font-family: 'Nunito', sans-serif;
+    color: navy;
+    font-weight: 100;
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 20px;
+    height: 500px;
+    background-color: navy;
+    overflow: hidden;
+    margin-bottom:0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footerNav {
+    display: inline-block;
+    width: 50%;
+}
+
+.footerNav ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: border-bottom 0.2s;
+}
+
+.footerNav ul li a:hover {
+    border-bottom: solid 1.5px white;
+}
+
+.footerContactInfo {
+    display: inline-block;
+    width: 50%;
+    color: white;
+}
+
+.footerContactInfo h1 {
+    font-weight: 300;
+}
+
+.finalSectionOnPage {
+    margin-bottom: 100px;
+}

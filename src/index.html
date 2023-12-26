@@ -1,0 +1,116 @@
+<!--
+Vishnu Sreekanth
+
+Tutoring Website
+
+index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <script>
+
+            function scrollToSpecifiedSection(specifiedSection) {
+                document.getElementById(specifiedSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function showOrHidePopUpMenu() {
+                if (document.getElementById("popUpMenu").style.display === "block") {
+                    document.getElementById("popUpMenu").style.display = "none";
+                } else {
+                    document.getElementById("popUpMenu").style.display = "block"
+                }
+            }
+
+        </script>
+        <title>StemMD Tutoring</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <nav>
+            <div class="navBarLogo">
+                <a href="index.html"><img src="img/StemMDLogo.png"></a>
+            </div>
+            <div class="navBarLinks">
+                <ul>
+                    <li><a href="index.html" class="alreadyOnPageOfLink">Home</a></li>
+                    <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="enroll.html">Enroll</a></li>
+                </ul>
+                <div class="hamburgerMenu">
+                    <img src="img/HamburgerMenu.png" onclick="showOrHidePopUpMenu()">
+                </div>
+            </div>
+            <div class="break"></div>
+            <div id="popUpMenu">
+                <ul>
+                    <li><a href="index.html" class="alreadyOnPageOfLink">Home</a></li>
+                    <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="enroll.html">Enroll</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="twoElementRow">
+            <div class="rowHalf">
+                <h1>The best way to learn STEM today.</h1>
+                <p>At StemMD Tutoring, we recognize the challenges that come with the modern STEM course curriculums. 
+                    Our firsthand experience in tackling these curriculums allows us to effectively tutor current STEM students to academic success.</p>
+                <button onclick="scrollToSpecifiedSection('secondHomepageSection')">Learn more</button>
+            </div><div class="rowHalf">
+                <img src="img/StemMDHomepageGraphic1.png">
+            </div>
+        </div>
+        <div id="secondHomepageSection">
+            <div class="rowHalf">
+                <img src="img/StemMDHomepageGraphic2.png">
+            </div><div class="rowHalf">
+                <h1>From STEM to the SAT, we've got you covered.</h1>
+                <p>We have expertise in many popular high school STEM courses. We also offer AP Exam and SAT tutoring, in the SAT's reading and writing 
+                    sections too!</p>
+                <a href="our-tutoring.html"><button class="leftButton">Our Tutoring</button></a>
+                <button class="rightButton" onclick="scrollToSpecifiedSection('thirdHomepageSection')">Show me more!</button>
+            </div>
+        </div>
+        <div id="thirdHomepageSection">
+            <div class="rowHalf">
+                <h1>Experience is the best teacher.</h1>
+                <p>Our tutors are all recently graduated alumni with vast experience in STEM courses.
+                </p>
+                <a href="about-us.html"><button class="leftButton">About Us</button></a>
+                <button class="rightButton" onclick="scrollToSpecifiedSection('fourthHomepageSection')">Sign me up!</button>
+            </div><div class="rowHalf">
+                <img src="img/StemMDHomepageGraphic3.png">
+            </div>
+        </div>
+        <div id="fourthHomepageSection" class="finalSectionOnPage">
+            <div class="rowHalf">
+                <img src="img/StemMDHomepageGraphic4.png">
+            </div><div class="rowHalf">
+                <h1>Click below to enroll today!</h1>
+                <a href="enroll.html"><button>Get Started</button></a>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="enroll.html">Enroll</a></li>
+            </ul>
+        </div><div class="footerContactInfo">
+            <h1>Contact Us:</h1>
+            <p>[PLACEHOLDER]@gmail.com</p>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,132 @@
+<!--
+Vishnu Sreekanth
+
+Tutoring Website
+
+about-us.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <script>
+
+            function scrollToSpecifiedSection(specifiedSection) {
+                document.getElementById(specifiedSection).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+
+            function showOrHidePopUpMenu() {
+                if (document.getElementById("popUpMenu").style.display === "block") {
+                    document.getElementById("popUpMenu").style.display = "none";
+                } else {
+                    document.getElementById("popUpMenu").style.display = "block"
+                }
+            }
+
+        </script>
+        <title>About Us | StemMD Tutoring</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <nav>
+            <div class="navBarLogo">
+                <a href="index.html"><img src="img/StemMDLogo.png"></a>
+            </div>
+            <div class="navBarLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                    <li><a href="about-us.html" class="alreadyOnPageOfLink">About Us</a></li>
+                    <li><a href="enroll.html">Enroll</a></li>
+                </ul>
+                <div class="hamburgerMenu">
+                    <img src="img/HamburgerMenu.png" onclick="showOrHidePopUpMenu()">
+                </div>
+            </div>
+            <div class="break"></div>
+            <div id="popUpMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                    <li><a href="about-us.html" class="alreadyOnPageOfLink">About Us</a></li>
+                    <li><a href="enroll.html">Enroll</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fullTextRow">
+            <h1>About Us</h1>
+        </div>
+        <div class="twoElementRow">
+            <div class="rowHalf">
+                <p>Established in 2023 and based in Maryland, StemMD Tutoring is a locally owned and operated business that 
+                    is committed to demystifying the world of STEM and helping students achieve academic success.</p>
+            </div><div class="rowHalf">
+                <img src="img/StemMDGradientLogo.png">
+            </div>
+        </div>
+        <div class="fullTextRow">
+            <h1>Our Team</h1>
+        </div>
+        <div class="condensedTwoElementRow">
+            <div class="condensedRowHalf">
+                <img src="img/StemMDPersonIcon.png">
+            </div><div class="condensedRowHalf">
+                <h1>[PLACEHOLDER]</h1>
+                <h2>Co-Founder and Tutor</h2>
+                <p>[PLACEHOLDER] is a co-founder of StemMD Tutoring and tutors SAT Math, Biology, and Chemistry. He is currently a sophomore 
+                    at the University of Maryland and is a pre-dental student who is planning to matriculate into the University of Maryland 
+                    School of Dentistry. He has extensive experience in biology and chemistry, having completed various core biology 
+                    and chemistry courses at the University of Maryland.</p>
+                <p><strong>Email</strong>: [PLACEHOLDER]@gmail.com</p>
+            </div>
+        </div>
+        <div class="condensedTwoElementRow">
+            <div class="condensedRowHalf">
+                <img src="img/StemMDPersonIcon.png">
+            </div><div class="condensedRowHalf">
+                <h1>[PLACEHOLDER]</h1>
+                <h2>Co-Founder and Tutor</h2>
+                <p>[PLACEHOLDER] is a co-founder of StemMD Tutoring and tutors Math, Biology, Chemistry, Physics, SAT Math, and SAT Reading and Writing. 
+                    He is currently a sophomore at the University of Maryland and is a pre-med student majoring in Neurobiology and Physiology. He 
+                    has a lot of experience in mathematics, completing all high school math courses up to Differential Equations. He 
+                    has also scored 5's on the following AP exams: Computer Science Principles, Calculus AB, Calculus BC, Biology, Chemistry, and
+                     Physics C.</p>
+                <p><strong>Email</strong>: [PLACEHOLDER]@gmail.com</p>
+            </div>
+        </div>
+        <div class="condensedTwoElementRow">
+            <div class="condensedRowHalf">
+                <img src="img/StemMDPersonIcon.png">
+            </div><div class="condensedRowHalf">
+                <h1>[PLACEHOLDER]</h1>
+                <h2>Tutor</h2>
+                <p>[PLACEHOLDER] is a tutor at StemMD Tutoring who tutors Computer Science and SAT Reading and Writing. He is currently a sophomore at 
+                    the University of Maryland and is pursuing a Bachelor of Science in Immersive Media Design. He completed all of the
+                    computer science courses offered in high school. He has experience in various programming languages such as Java, JavaScript, Python, C, 
+                    and React, and has worked on the frontend of the website of a professor at the University of Maryland. He is also an experienced 
+                    tutor, having previously volunteered as one.
+                </p>
+                <p><strong>Email</strong>: [PLACEHOLDER]@gmail.com</p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-tutoring.html">Our Tutoring</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="enroll.html">Enroll</a></li>
+            </ul>
+        </div><div class="footerContactInfo">
+            <h1>Contact Us:</h1>
+            <p>[PLACEHOLDER]@gmail.com</p>
+        </div>
+    </footer>
+</html>
